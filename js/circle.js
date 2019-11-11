@@ -10,7 +10,8 @@ get-свойство, возвращающее диаметр окружност
 Продемонстрировать работу свойств и методов.
 */
 
-class circle {
+class Circle {
+    
     constructor (r) {
 
         this.r = r;
@@ -51,3 +52,38 @@ class circle {
         return Math.PI * 2 * this.r;
     }
 }
+
+let circle1 = new Circle(3);
+
+console.log('Create new circle:')
+console.table(circle1);
+
+console.log('Get radius:');
+console.log(circle1.radius);
+
+console.log('Get diametr:');
+console.log(circle1.diametr);
+
+console.log('Get area:');
+console.log(circle1.area());
+
+console.log('Get length:');
+console.log(circle1.length());
+
+console.log('Set radius to 5:')
+circle1.radius = 5;
+console.table(circle1);
+
+console.log('Get radius:');
+console.log(circle1.radius);
+
+console.log('Get diametr:');
+console.log(circle1.diametr);
+
+console.log('Get area:');
+console.log(circle1.area());
+
+console.log('Get length:');
+console.log(circle1.length());
+
+
